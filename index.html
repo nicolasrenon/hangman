@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hangman</title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="Hangman">
+      <form class="Hangman__connection">
+        <label for="email">Enter your email address</label>
+        <input type="email" class="Hangman__email" id="email" required>
+        <button type="submit" class="Hangman__submit">Start</button>
+      </form>
+      <div class="Hangman__game">
+        <ul class="Hangman__phrase"></ul>
+        <div class="Hangman__status"></div>
+        <form class="Hangman__guess">
+          <input type="text" class="Hangman__character" placeholder="1 letter only" id="char" maxlength="1" pattern="[a-zA-Z]">
+          <button type="submit" class="Hangman__submit">Try</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="hangman.js"></script>
+    <script src='jquery-1.11.0.js'></script>
+    <!-- <script src='testApi.js'></script> -->
+    <!-- <script src='test.js'></script> -->
+  </body>
+</html>
